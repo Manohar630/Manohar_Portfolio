@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Manohar Sirasu – CSE Student, AI/ML enthusiast, Web Developer & Creative Content Creator. Explore my projects and experiments." />
+  <title>Manohar Sirasu | CSE Student & AI/ML Enthusiast</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-spinner"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      MANOHAR
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home"       class="nav-link">Home</a></li>
+      <li><a href="#about"      class="nav-link">About</a></li>
+      <li><a href="#skills"     class="nav-link">Skills</a></li>
+      <li><a href="#projects"   class="nav-link">Projects</a></li>
+      <li><a href="#experience" class="nav-link">Journey</a></li>
+      <li><a href="#contact"    class="nav-link">Contact</a></li>
+      <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+    </ul>
+  </nav>
+
+  <!-- ══════════ HERO ══════════ -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="hero_bg.png" alt="" class="hero-bg-img" />
+      <div class="hero-overlay"></div>
+      <div class="hero-particles" id="particles"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">
+          <span class="name-line">Manohar</span>
+          <span class="name-line accent">Sirasu</span>
+        </h1>
+        <div class="hero-role-wrap">
+          <span class="role-prefix">I build&nbsp;</span>
+          <span class="role-typed" id="role-typed"></span><span class="role-cursor-blink">|</span>
+        </div>
+        <p class="hero-desc">
+          CSE student with a passion for AI/ML, data analytics, and creative tech — turning abstract ideas into working prototypes that solve real problems.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <span>View My Work</span><i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="https://github.com/Manohar630" target="_blank" class="btn btn-ghost">
+            <i class="fab fa-github"></i><span>GitHub</span>
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num" data-target="1">0</span><span class="stat-plus"></span>
+            <span class="stat-label">Live Project</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-target="4">0</span><span class="stat-plus"></span>
+            <span class="stat-label">Languages</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-target="3">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Focus Areas</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="profile-orbit">
+          <div class="orbit-ring ring-1"></div>
+          <div class="orbit-ring ring-2"></div>
+          <div class="orbit-dot dot-1"><i class="fab fa-python"></i></div>
+          <div class="orbit-dot dot-2"><i class="fas fa-brain"></i></div>
+          <div class="orbit-dot dot-3"><i class="fab fa-js-square"></i></div>
+          <div class="orbit-dot dot-4"><i class="fas fa-chart-line"></i></div>
+          <div class="profile-card">
+            <img src="profile.png" alt="Manohar Sirasu" class="profile-img" />
+            <div class="profile-glow"></div>
+          </div>
+        </div>
+        <div class="hero-code-card">
+          <div class="code-card-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="code-file">manohar.py</span>
+          </div>
+          <div class="code-body">
+            <p><span class="kw">class</span> <span class="var">Manohar</span>:</p>
+            <p>&nbsp;&nbsp;<span class="key">role</span> = <span class="str">"CSE Student"</span></p>
+            <p>&nbsp;&nbsp;<span class="key">focus</span> = [<span class="str">"AI/ML"</span>, <span class="str">"Data"</span>]</p>
+            <p>&nbsp;&nbsp;<span class="key">lang</span> = [<span class="str">"Python"</span>, <span class="str">"JS"</span>]</p>
+            <p>&nbsp;&nbsp;<span class="key">coffee</span> = <span class="num">float('inf')</span></p>
+            <p class="blink-line"><span class="cursor-code">_</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"><div class="scroll-dot"></div></div>
+    </div>
+  </section>
+
+  <!-- ══════════ ABOUT ══════════ -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span class="accent">Me</span></h2>
+        <p class="section-subtitle">A little insight into my world</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-wrap" data-aos>
+          <div class="about-img-frame">
+            <img src="profile.png" alt="Manohar Sirasu" class="about-img" />
+            <div class="img-border-anim"></div>
+          </div>
+          <div class="about-socials">
+            <a href="https://github.com/Manohar630" target="_blank" class="social-btn" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://instagram.com/manu_lyrics25" target="_blank" class="social-btn" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:sirasumanohar25@gmail.com" class="social-btn" title="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="about-content" data-aos>
+          <h3 class="about-heading">Turning Data & Code into Creative Impact</h3>
+          <p class="about-text">
+            I'm <strong>Manohar Sirasu</strong>, a Computer Science Engineering (CSE) student with a deep passion for building AI-powered tools, web applications, and creative digital content. I thrive at the intersection of technology and creativity.
+          </p>
+          <p class="about-text">
+            From writing ML experiments with NumPy &amp; Pandas to crafting lyric-style reels on Instagram, I constantly explore new ideas and turn abstract concepts into small, working prototypes. Every project is an experiment in learning.
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight-item"><i class="fas fa-map-marker-alt"></i><span>Telangana, India</span></div>
+            <div class="highlight-item"><i class="fas fa-graduation-cap"></i><span>B.Tech – CSE (AI/ML)</span></div>
+            <div class="highlight-item"><i class="fas fa-envelope"></i><span>sirasumanohar25@gmail.com</span></div>
+            <div class="highlight-item"><i class="fab fa-instagram"></i><span>@manu_lyrics25</span></div>
+            <div class="highlight-item"><i class="fab fa-github"></i><span>github.com/Manohar630</span></div>
+            <div class="highlight-item"><i class="fas fa-lightbulb"></i><span>Always Building Something</span></div>
+          </div>
+
+          <div class="about-actions">
+            <a href="https://github.com/Manohar630" target="_blank" class="btn btn-primary">
+              <i class="fab fa-github"></i><span>See My GitHub</span>
+            </a>
+            <a href="#contact" class="btn btn-outline">Let's Talk</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ SKILLS ══════════ -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">My <span class="accent">Skills</span></h2>
+        <p class="section-subtitle">Languages, tools, and concepts I work with</p>
+      </div>
+
+      <div class="skills-tabs" data-aos>
+        <button class="tab-btn active" data-tab="frontend">Languages</button>
+        <button class="tab-btn" data-tab="backend">AI / ML & Data</button>
+        <button class="tab-btn" data-tab="tools">Tools & Creative</button>
+      </div>
+
+      <!-- Languages -->
+      <div class="skills-panels">
+        <div class="skills-panel active" id="tab-frontend">
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fab fa-python"></i></div>
+              <div class="skill-info"><span class="skill-name">Python</span><span class="skill-level">85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+              <div class="skill-info"><span class="skill-name">JavaScript</span><span class="skill-level">80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fas fa-copyright"></i></div>
+              <div class="skill-info"><span class="skill-name">C / C++</span><span class="skill-level">78%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fab fa-html5"></i></div>
+              <div class="skill-info"><span class="skill-name">HTML5 / CSS3</span><span class="skill-level">88%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI / ML & Data -->
+        <div class="skills-panel" id="tab-backend">
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fas fa-table"></i></div>
+              <div class="skill-info"><span class="skill-name">NumPy & Pandas</span><span class="skill-level">82%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fas fa-robot"></i></div>
+              <div class="skill-info"><span class="skill-name">Machine Learning</span><span class="skill-level">72%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fas fa-brain"></i></div>
+              <div class="skill-info"><span class="skill-name">Deep Learning</span><span class="skill-level">65%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+              <div class="skill-info"><span class="skill-name">Data Analytics</span><span class="skill-level">78%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools & Creative -->
+        <div class="skills-panel" id="tab-tools">
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+              <div class="skill-info"><span class="skill-name">Git & GitHub</span><span class="skill-level">82%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fas fa-video"></i></div>
+              <div class="skill-info"><span class="skill-name">Video / Reel Editing</span><span class="skill-level">85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fab fa-instagram"></i></div>
+              <div class="skill-info"><span class="skill-name">Content Creation</span><span class="skill-level">88%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fas fa-flask"></i></div>
+              <div class="skill-info"><span class="skill-name">Rapid Prototyping</span><span class="skill-level">80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ PROJECTS ══════════ -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+        <p class="section-subtitle">Experiments, tools, and apps I've built</p>
+      </div>
+
+      <div class="projects-filter" data-aos>
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="ai">AI / ML</button>
+        <button class="filter-btn" data-filter="data">Data</button>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+
+        <div class="project-card" data-category="web" data-aos>
+          <div class="project-visual">
+            <div class="project-mockup mockup-quiz">
+              <div class="mockup-header"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+              <div class="mockup-body">
+                <div class="mockup-bar w-60"></div>
+                <div class="mockup-choice active"></div>
+                <div class="mockup-choice"></div>
+                <div class="mockup-choice"></div>
+                <div class="mockup-choice"></div>
+              </div>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://client-eosin-three-59.vercel.app/" target="_blank" class="proj-link" title="Live Preview"><i class="fas fa-external-link-alt"></i></a>
+                <a href="https://github.com/Manohar630" target="_blank" class="proj-link" title="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span class="ptag">JavaScript</span><span class="ptag">Firebase</span><span class="ptag">HTML/CSS</span></div>
+            <h3 class="project-title"><a href="https://client-eosin-three-59.vercel.app/" target="_blank" style="color:inherit;text-decoration:none;">TS ECET Quiz Platform</a></h3>
+            <p class="project-desc">A full-featured competitive exam practice platform with 200+ questions, mock tests, real-time analytics, and adaptive difficulty — deployed on Vercel.</p>
+            <div class="project-footer">
+              <span class="project-type web"><i class="fas fa-globe"></i> Web App</span>
+              <span class="project-featured"><i class="fas fa-star"></i> Featured</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Future projects will be added here -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ JOURNEY / EXPERIENCE ══════════ -->
+  <section class="section experience-section" id="experience">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-tag">My Journey</span>
+        <h2 class="section-title">Education & <span class="accent">Experience</span></h2>
+        <p class="section-subtitle">The path that shaped who I am</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-line"></div>
+
+        <div class="timeline-item left" data-aos>
+          <div class="timeline-dot edu"><i class="fas fa-graduation-cap"></i></div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <span class="tc-year">2023 – 2026</span>
+              <span class="tc-badge edu">Diploma</span>
+            </div>
+            <h4 class="tc-title">Diploma in Computer Science Engineering</h4>
+            <p class="tc-desc">I began my journey in Computer Science Engineering in 2023, when I enrolled in a Diploma program in CSE. Over the course of three years, I built a strong foundation in core computing concepts and successfully completed my diploma in 2026.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item right" data-aos>
+          <div class="timeline-dot"><i class="fas fa-laptop-code"></i></div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <span class="tc-year">2023 – 2026</span>
+              <span class="tc-badge work">Exploration</span>
+            </div>
+            <h4 class="tc-title">Skill Development & Hands-on Coding</h4>
+            <p class="tc-desc">During my diploma, I actively explored and learned multiple programming languages and technologies, focusing on practical skills and hands-on development. This period played a key role in shaping my technical mindset and problem-solving abilities.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item left" data-aos>
+          <div class="timeline-dot"><i class="fas fa-globe"></i></div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <span class="tc-year">2026</span>
+              <span class="tc-badge work">Project</span>
+            </div>
+            <h4 class="tc-title">TS ECET 2026 Project</h4>
+            <p class="tc-desc">As a culmination of my learning, I developed my ECET 2026 project, where I applied my knowledge to build a complete, real-world solution. This project strengthened my understanding of system design, development workflows, and implementation.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item right" data-aos>
+          <div class="timeline-dot edu"><i class="fas fa-brain"></i></div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <span class="tc-year">2026 – Present</span>
+              <span class="tc-badge edu">B.Tech</span>
+            </div>
+            <h4 class="tc-title">B.Tech in AI & Machine Learning</h4>
+            <p class="tc-desc">Following my diploma, I chose to pursue a B.Tech in Artificial Intelligence and Machine Learning, aligning my career with advanced technologies and future-focused domains. I am now focused on deepening my expertise in AI/ML, building intelligent systems, and working on impactful projects.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item left" data-aos>
+          <div class="timeline-dot"><i class="fab fa-instagram"></i></div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <span class="tc-year">2023 – Present</span>
+              <span class="tc-badge" style="background:rgba(255,101,132,0.15);color:#ff6584;">Creator</span>
+            </div>
+            <h4 class="tc-title">Content Creator · @manu_lyrics25</h4>
+            <p class="tc-org">Instagram · <a href="https://instagram.com/manu_lyrics25" target="_blank" style="color:var(--accent)">@manu_lyrics25</a></p>
+            <p class="tc-desc">Creating and sharing short, creative content — lyric-style edits and reels blending storytelling, rhythm, and visual effects with video/photo editing skills.</p>
+            <div class="tc-tags"><span>Video Editing</span><span>Reels</span><span>Storytelling</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ CONTACT ══════════ -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's <span class="accent">Connect</span></h2>
+        <p class="section-subtitle">Looking to collaborate, learn, or build together? Let's talk!</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info" data-aos>
+          <h3>Open for Opportunities 🚀</h3>
+          <p>I'm actively looking for opportunities to deepen my AI/ML skills, build real projects combining coding, data, and creativity, and collaborate with teams that value learning and impact.</p>
+
+          <div class="contact-items">
+            <a href="mailto:sirasumanohar25@gmail.com" class="contact-item">
+              <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+              <div class="ci-text">
+                <span class="ci-label">Email</span>
+                <span class="ci-value">sirasumanohar25@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://github.com/Manohar630" target="_blank" class="contact-item">
+              <div class="ci-icon"><i class="fab fa-github"></i></div>
+              <div class="ci-text">
+                <span class="ci-label">GitHub</span>
+                <span class="ci-value">github.com/Manohar630</span>
+              </div>
+            </a>
+            <a href="https://instagram.com/manu_lyrics25" target="_blank" class="contact-item">
+              <div class="ci-icon"><i class="fab fa-instagram"></i></div>
+              <div class="ci-text">
+                <span class="ci-label">Instagram</span>
+                <span class="ci-value">@manu_lyrics25</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-socials">
+            <a href="https://github.com/Manohar630" target="_blank" class="csocial" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://instagram.com/manu_lyrics25" target="_blank" class="csocial" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:sirasumanohar25@gmail.com" class="csocial" title="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap" data-aos>
+          <form class="contact-form" id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">Full Name</label>
+                <input type="text" id="fname" name="name" placeholder="Your Name" required />
+              </div>
+              <div class="form-group">
+                <label for="femail">Email</label>
+                <input type="email" id="femail" name="email" placeholder="your@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="fsubject">Subject</label>
+              <input type="text" id="fsubject" name="subject" placeholder="Collaboration / Project / Just Saying Hi!" required />
+            </div>
+            <div class="form-group">
+              <label for="fmessage">Message</label>
+              <textarea id="fmessage" name="message" rows="5" placeholder="Tell me about what you have in mind..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit" id="submit-btn">
+              <span>Send Message</span><i class="fas fa-paper-plane"></i>
+            </button>
+            <div class="form-success" id="form-success">
+              <i class="fas fa-check-circle"></i>
+              Thanks! Message received — I'll get back to you soon 🚀
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          MANOHAR
+        </div>
+        <a href="#home" class="back-top" title="Back to top"><i class="fas fa-arrow-up"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
